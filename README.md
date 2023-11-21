@@ -9,9 +9,9 @@ It's classic problem in statistics and numerical analysis:
 
   and the error is minimized when
 
-  $$a = \fracc{n \sum_{i} x_{i}y_{i} - (\sum_{i} x_{i})(\sum_{i} y_{i})}{n \sum_{i} x_{i}^{2} - (\sum_{i} x_{i})^{2}},$$
+  $$a = \fracc{ n \sum_{i} x_{i}y_{i} - (\sum_{i} x_{i})(\sum_{i} y_{i}) }{ n \sum_{i} x_{i}^{2} - (\sum_{i} x_{i})^{2} },$$
     
-  $$b = \fracc{\sum_{i} y_{i} - a \sum_{i}x_{i} }{n}$$
+  $$b = \fracc{ \sum_{i} y_{i} - a \sum_{i}x_{i} }{n}$$
 
     
   Given that n points in the plane $(x_{1}, y_{1}), (x_{2}, y_{2}), \ldots , (x_{n}, y_{n})$
@@ -19,11 +19,11 @@ It's classic problem in statistics and numerical analysis:
     
   + The sum of errors $E$ in each line segment
   + The number of lines $L$
-  + Then the function to optimize is $f(x)= E + c * L$, for some constant $c$.
+  + Then the function to optimize is $f(x)= E + c L$, for some constant $c$.
   + $OPT(j)$ is the minimum cost for points $p_{1}, p_{i+1}, \ldots , p_{j}.$
   + $e(i,j)$ is the sum of the errors for the points $p_{1}, p_{i+1}, \ldots , p_{j}.$
     - To $j = 0$, $OPT(j) = 0$
-    - Otherwise $OPT(j) = min_{1 <= i <= j} \{ e(i,j) + c + OPT(i-1)\}$
+    - Otherwise $OPT(j) = min_{1 <= i <= j} \{ (e(i,j) + c + OPT(i-1) )\}$
 
 References:
   Notes of the class
