@@ -1,4 +1,4 @@
-# Segmented-least-squares.
+# Segmented least squares.
 This code is an implementation of Segmented least squares using Matplotlib to display the results.
 
 It's classic problem in statistics and numerical analysis:
@@ -10,6 +10,8 @@ It's classic problem in statistics and numerical analysis:
   and the error is minimized when
 
  $$a = \frac{ n \sum_{i} x_{i}y_{i} - (\sum_{i} x_{i})(\sum_{i} y_{i}) }{ n \sum_{i} x_{i}^{2} - (\sum_{i} x_{i})^{2} },$$
+
+
 
  $$b = \frac{ \sum_{i} y_{i} - a \sum_{i}x_{i} }{n}$$
 
@@ -26,5 +28,5 @@ It's classic problem in statistics and numerical analysis:
     - Otherwise $OPT(j) = min_{1 <= i <= j} \{ (e(i,j) + c + OPT(i-1) )\}$
 
 References:
-  Notes of the class
+  Notes of the class.
 
