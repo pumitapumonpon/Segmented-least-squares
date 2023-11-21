@@ -9,9 +9,9 @@ It's classic problem in statistics and numerical analysis:
 
   and the error is minimized when
 
-  $$a = \fracc{ n \sum_{i} x_{i}y_{i} - (\sum_{i} x_{i})(\sum_{i} y_{i}) }{ n \sum_{i} x_{i}^{2} - (\sum_{i} x_{i})^{2} },$$
-    
-  $$b = \fracc{ \sum_{i} y_{i} - a \sum_{i}x_{i} }{n}$$
+ $$a = \frac{ n \sum_{i} x_{i}y_{i} - (\sum_{i} x_{i})(\sum_{i} y_{i}) }{ n \sum_{i} x_{i}^{2} - (\sum_{i} x_{i})^{2} },$$
+
+ $$b = \frac{ \sum_{i} y_{i} - a \sum_{i}x_{i} }{n}$$
 
     
   Given that n points in the plane $(x_{1}, y_{1}), (x_{2}, y_{2}), \ldots , (x_{n}, y_{n})$
